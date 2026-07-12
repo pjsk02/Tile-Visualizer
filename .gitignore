@@ -1,7 +1,9 @@
 # Dependencies
 node_modules/
-package-lock.json
 yarn.lock
+# package-lock.json IS committed on purpose: all deps are installed up front (see
+# CLAUDE.md) so both devs share the exact same resolved versions and never hit a
+# lockfile merge conflict.
 
 # Build outputs
 dist/
