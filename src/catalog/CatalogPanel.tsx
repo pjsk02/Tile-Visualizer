@@ -1,4 +1,6 @@
+import { useMemo } from 'react';
 import { useVisualizerStore } from '../store/useVisualizerStore';
+import { isDesignApplied, useShowroomStore } from '../store/useShowroomStore';
 import type { Tile } from '../types/catalog';
 import { DesignGrid } from './DesignGrid';
 import { FinishFilter } from './FinishFilter';
@@ -11,13 +13,20 @@ export function CatalogPanel() {
   const selectedDesign = useVisualizerStore((s) => s.selectedDesign);
   const selectedSurfaceId = useVisualizerStore((s) => s.selectedSurfaceId);
   const selectDesign = useVisualizerStore((s) => s.selectDesign);
+  const appliedBySurface = useShowroomStore((s) => s.appliedBySurface);
 
   const visible = filterDesigns(designs, finishFilter);
 
+  const appliedDesignIds = useMemo(() => {
+    const ids = new Set<string>();
+    for (const tile of Object.values(appliedBySurface)) {
+      ids.add(tile.id);
+    }
+    return ids;
+  }, [appliedBySurface]);
+
   const handleSelect = (design: Tile) => {
     selectDesign(design);
-    // Temporary verification log (exit criteria)
-    console.log('[catalog] selectDesign', design.id, design.name, design.finish);
   };
 
   return (
@@ -41,6 +50,9 @@ export function CatalogPanel() {
         <p className={styles.active}>
           Selected: <strong>{selectedDesign.name}</strong>
           <span className={styles.activeCode}> · {selectedDesign.id}</span>
+          {isDesignApplied(appliedBySurface, selectedDesign.id) && (
+            <span className={styles.appliedHint}> · on a surface</span>
+          )}
         </p>
       )}
 
@@ -48,6 +60,7 @@ export function CatalogPanel() {
         <DesignGrid
           designs={visible}
           selectedDesignId={selectedDesign?.id ?? null}
+          appliedDesignIds={appliedDesignIds}
           onSelectDesign={handleSelect}
         />
       </div>

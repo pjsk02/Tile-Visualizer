@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import { CatalogPanel } from '../catalog/CatalogPanel';
+import { SceneControls } from './SceneControls';
 import styles from './AppShell.module.css';
 
 type AppShellProps = {
@@ -12,6 +13,7 @@ export function AppShell({ children }: AppShellProps) {
 
   return (
     <div className={styles.shell}>
+      <SceneControls />
       <main className={styles.canvasSlot}>{children}</main>
 
       <button

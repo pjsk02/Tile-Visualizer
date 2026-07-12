@@ -62,6 +62,8 @@ export function DesignProbe() {
         position: 'absolute',
         right: 12,
         bottom: 12,
+        width: 'auto',
+        height: 'auto',
         maxWidth: 360,
         padding: '8px 12px',
         background: 'rgba(0,0,0,0.55)',

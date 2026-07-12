@@ -14,7 +14,8 @@
   position: relative;
 }
 
-.canvasSlot > * {
+/* Only the r3f mount fills the slot — not HUD overlays (DesignProbe, etc.). */
+.canvasSlot > :global(div:has(> canvas)) {
   width: 100%;
   height: 100%;
   display: block;

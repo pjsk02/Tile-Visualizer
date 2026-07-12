@@ -60,6 +60,11 @@
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
+.appliedHint {
+  color: #6ecf96;
+  font-weight: 500;
+}
+
 .scroll {
   flex: 1;
   min-height: 0;

@@ -1,0 +1,69 @@
+.bar {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 15;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(14, 16, 20, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  pointer-events: auto;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a8494;
+  margin-right: 2px;
+}
+
+.chip {
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #d8dce4;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.chip:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.chip:focus-visible {
+  outline: 2px solid #6ea8ff;
+  outline-offset: 2px;
+}
+
+.active {
+  border-color: #6ea8ff;
+  background: rgba(110, 168, 255, 0.15);
+  color: #eef3ff;
+}
+
+@media (max-width: 640px) {
+  .bar {
+    top: auto;
+    bottom: 52px;
+    left: 8px;
+    right: 8px;
+    max-width: calc(100% - 16px);
+  }
+}

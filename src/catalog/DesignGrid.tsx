@@ -5,10 +5,16 @@ import styles from './DesignGrid.module.css';
 export interface DesignGridProps {
   designs: Tile[];
   selectedDesignId: string | null;
+  appliedDesignIds: Set<string>;
   onSelectDesign: (design: Tile) => void;
 }
 
-export function DesignGrid({ designs, selectedDesignId, onSelectDesign }: DesignGridProps) {
+export function DesignGrid({
+  designs,
+  selectedDesignId,
+  appliedDesignIds,
+  onSelectDesign,
+}: DesignGridProps) {
   if (designs.length === 0) {
     return (
       <div className={styles.empty} role="status">
@@ -24,6 +30,7 @@ export function DesignGrid({ designs, selectedDesignId, onSelectDesign }: Design
           <DesignCard
             design={design}
             selected={design.id === selectedDesignId}
+            applied={appliedDesignIds.has(design.id)}
             onSelect={onSelectDesign}
           />
         </div>

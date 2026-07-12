@@ -1,12 +1,15 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Environment, OrbitControls } from '@react-three/drei';
+import * as THREE from 'three';
 import { useVisualizerStore } from '../store/useVisualizerStore';
 import { Panels } from '../panels/Panels';
-import { CAMERA_DEFAULTS, ORBIT_LIMITS, ORBIT_TARGET } from './sceneConfig';
-import { SplatScene } from './SplatScene';
-import { PlaceholderRoom } from './PlaceholderRoom';
+import { ShowroomArchitecture } from './architecture/ShowroomArchitecture';
+import { FurniturePreset } from './furniture/FurniturePreset';
+import { SceneLighting } from './lighting/SceneLighting';
+import { PostEffects } from './lighting/PostEffects';
+import { ShowroomControls } from './ShowroomControls';
 import { DesignProbe } from './DesignProbe';
+import { CAMERA_DEFAULTS, TONE_MAPPING_EXPOSURE } from './sceneConfig';
 
 export function Experience() {
   const selectSurface = useVisualizerStore((s) => s.selectSurface);
@@ -15,40 +18,37 @@ export function Experience() {
     <>
       <DesignProbe />
       <Canvas
+        shadows
         camera={{
           position: CAMERA_DEFAULTS.position,
           fov: CAMERA_DEFAULTS.fov,
           near: CAMERA_DEFAULTS.near,
           far: CAMERA_DEFAULTS.far,
         }}
-        gl={{ antialias: true }}
+        gl={{
+          antialias: true,
+          powerPreference: 'high-performance',
+        }}
+        onCreated={({ gl }) => {
+          gl.toneMapping = THREE.ACESFilmicToneMapping;
+          gl.toneMappingExposure = TONE_MAPPING_EXPOSURE;
+          gl.shadowMap.enabled = true;
+          gl.shadowMap.type = THREE.PCFSoftShadowMap;
+        }}
         onPointerMissed={() => selectSurface(null)}
       >
-        <color attach="background" args={['#111318']} />
-        <ambientLight intensity={0.35} />
-        <directionalLight position={[5, 8, 5]} intensity={0.85} />
-        <Suspense fallback={null}>
-          <Environment preset="apartment" environmentIntensity={0.65} />
-        </Suspense>
+        <color attach="background" args={['#1a1c22']} />
 
-        <SplatScene>
-          <PlaceholderRoom />
-        </SplatScene>
-
-        {/* Inserted flat quads — only layer that receives tile textures */}
+        <SceneLighting />
+        <ShowroomArchitecture />
         <Panels />
 
-        <OrbitControls
-          makeDefault
-          target={ORBIT_TARGET}
-          enablePan
-          enableDamping
-          dampingFactor={0.08}
-          minDistance={ORBIT_LIMITS.minDistance}
-          maxDistance={ORBIT_LIMITS.maxDistance}
-          maxPolarAngle={ORBIT_LIMITS.maxPolarAngle}
-          screenSpacePanning
-        />
+        <Suspense fallback={null}>
+          <FurniturePreset />
+        </Suspense>
+
+        <PostEffects />
+        <ShowroomControls />
       </Canvas>
     </>
   );
