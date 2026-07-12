@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Gaussian-splat & video exports (generated on Kaggle, downloaded separately)
+*.ply
+*.spz
+*.mp4
+*.webm
+
+# Raw catalog source scan (already extracted into catalog.json/csv + images/)
+2ft by 4ft Catalog.pdf
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Local IDE / Claude settings (machine-specific)
+.claude/settings.local.json
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.log
+
+# Test coverage
+coverage/

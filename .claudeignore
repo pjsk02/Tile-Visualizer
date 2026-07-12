@@ -1,0 +1,39 @@
+﻿# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Gaussian-splat & video binaries (downloaded from Kaggle, not versioned)
+*.ply
+*.spz
+*.mp4
+*.webm
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.log
+
+# Test coverage
+coverage/

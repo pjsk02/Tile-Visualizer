@@ -1,0 +1,50 @@
+id,slug,name,finish,collection,width_ft,height_ft,size_mm,texture_path,thumbnail_path,lifestyle_path,random_faces,source_page,family,dominant_color
+veranata-aqua,veranata-aqua,Veranata Aqua,glossy,Glossy Random Vol 1,2,4,600x1200,images/veranata-aqua_texture.png,images/veranata-aqua_thumb.png,images/veranata-aqua_lifestyle.png,4,6,Aqua,219;223;223
+osmos-aqua,osmos-aqua,Osmos Aqua,glossy,Glossy Random Vol 1,2,4,600x1200,images/osmos-aqua_texture.png,images/osmos-aqua_thumb.png,images/osmos-aqua_lifestyle.png,3,7,Aqua,211;217;218
+flovita-ocean,flovita-ocean,Flovita Ocean,glossy,Glossy Random Vol 1,2,4,600x1200,images/flovita-ocean_texture.png,images/flovita-ocean_thumb.png,images/flovita-ocean_lifestyle.png,4,8,Flovita,176;190;191
+flovita-sky,flovita-sky,Flovita Sky,glossy,Glossy Random Vol 1,2,4,600x1200,images/flovita-sky_texture.png,images/flovita-sky_thumb.png,images/flovita-sky_lifestyle.png,4,9,Flovita,191;199;212
+falcon-mint,falcon-mint,Falcon Mint,glossy,Glossy Random Vol 1,2,4,600x1200,images/falcon-mint_texture.png,images/falcon-mint_thumb.png,images/falcon-mint_lifestyle.png,5,10,Falcon,220;224;217
+buggio-grey,buggio-grey,Buggio Grey,glossy,Glossy Random Vol 1,2,4,600x1200,images/buggio-grey_texture.png,images/buggio-grey_thumb.png,images/buggio-grey_lifestyle.png,2,11,Buggio,218;216;213
+hovac-carrara,hovac-carrara,Hovac Carrara,glossy,Glossy Random Vol 1,2,4,600x1200,images/hovac-carrara_texture.png,images/hovac-carrara_thumb.png,images/hovac-carrara_lifestyle.png,4,12,Carrara,243;242;241
+jcob-white,jcob-white,Jcob White,glossy,Glossy Random Vol 1,2,4,600x1200,images/jcob-white_texture.png,images/jcob-white_thumb.png,images/jcob-white_lifestyle.png,3,13,Jcob,251;251;250
+firanto-fusion,firanto-fusion,Firanto Fusion,glossy,Glossy Random Vol 1,2,4,600x1200,images/firanto-fusion_texture.png,images/firanto-fusion_thumb.png,images/firanto-fusion_lifestyle.png,5,14,Fusion,246;245;240
+brilliant-white,brilliant-white,Brilliant White,glossy,Glossy Random Vol 1,2,4,600x1200,images/brilliant-white_texture.png,images/brilliant-white_thumb.png,images/brilliant-white_lifestyle.png,1,15,Brilliant,249;249;250
+starko-gold,starko-gold,Starko Gold,glossy,Glossy Random Vol 1,2,4,600x1200,images/starko-gold_texture.png,images/starko-gold_thumb.png,images/starko-gold_lifestyle.png,3,16,Starko,250;250;250
+statuario-marble,statuario-marble,Statuario Marble,glossy,Glossy Random Vol 1,2,4,600x1200,images/statuario-marble_texture.png,images/statuario-marble_thumb.png,images/statuario-marble_lifestyle.png,4,17,Statuario,249;249;249
+statuario-grey,statuario-grey,Statuario Grey,glossy,Glossy Random Vol 1,2,4,600x1200,images/statuario-grey_texture.png,images/statuario-grey_thumb.png,images/statuario-grey_lifestyle.png,5,19,Statuario,249;249;249
+imperial-statuario,imperial-statuario,Imperial Statuario,glossy,Glossy Random Vol 1,2,4,600x1200,images/imperial-statuario_texture.png,images/imperial-statuario_thumb.png,images/imperial-statuario_lifestyle.png,5,20,Statuario,251;251;250
+carrara-black,carrara-black,Carrara Black,glossy,Glossy Random Vol 1,2,4,600x1200,images/carrara-black_texture.png,images/carrara-black_thumb.png,images/carrara-black_lifestyle.png,6,21,Carrara,247;247;247
+classic-carrara,classic-carrara,Classic Carrara,glossy,Glossy Random Vol 1,2,4,600x1200,images/classic-carrara_texture.png,images/classic-carrara_thumb.png,images/classic-carrara_lifestyle.png,6,22,Carrara,251;251;251
+carrara-alaska,carrara-alaska,Carrara Alaska,glossy,Glossy Random Vol 1,2,4,600x1200,images/carrara-alaska_texture.png,images/carrara-alaska_thumb.png,images/carrara-alaska_lifestyle.png,7,23,Carrara,251;251;250
+carrara-perla,carrara-perla,Carrara Perla,glossy,Glossy Random Vol 1,2,4,600x1200,images/carrara-perla_texture.png,images/carrara-perla_thumb.png,images/carrara-perla_lifestyle.png,6,24,Carrara,250;250;250
+italian-statuario,italian-statuario,Italian Statuario,glossy,Glossy Random Vol 1,2,4,600x1200,images/italian-statuario_texture.png,images/italian-statuario_thumb.png,images/italian-statuario_lifestyle.png,3,25,Statuario,243;243;244
+ocean-white-onyx,ocean-white-onyx,Ocean White Onyx,glossy,Glossy Random Vol 1,2,4,600x1200,images/ocean-white-onyx_texture.png,images/ocean-white-onyx_thumb.png,images/ocean-white-onyx_lifestyle.png,5,26,Onyx,251;251;250
+blanck-luminix,blanck-luminix,Blanck Luminix,glossy,Glossy Random Vol 1,2,4,600x1200,images/blanck-luminix_texture.png,images/blanck-luminix_thumb.png,images/blanck-luminix_lifestyle.png,4,27,Blanck,216;215;212
+black-crystel,black-crystel,Black Crystel,glossy,Glossy Random Vol 1,2,4,600x1200,images/black-crystel_texture.png,images/black-crystel_thumb.png,images/black-crystel_lifestyle.png,1,29,Crystel,250;250;250
+paper-grey,paper-grey,Paper Grey,glossy,Glossy Random Vol 1,2,4,600x1200,images/paper-grey_texture.png,images/paper-grey_thumb.png,images/paper-grey_lifestyle.png,1,30,Paper,245;245;246
+amazonia-real,amazonia-real,Amazonia Real,glossy,Glossy Random Vol 1,2,4,600x1200,images/amazonia-real_texture.png,images/amazonia-real_thumb.png,images/amazonia-real_lifestyle.png,5,31,Amazonia,218;213;209
+ice-fusion,ice-fusion,Ice Fusion,glossy,Glossy Random Vol 1,2,4,600x1200,images/ice-fusion_texture.png,images/ice-fusion_thumb.png,images/ice-fusion_lifestyle.png,1,33,Fusion,221;221;220
+ice-brwon,ice-brwon,Ice Brwon,glossy,Glossy Random Vol 1,2,4,600x1200,images/ice-brwon_texture.png,images/ice-brwon_thumb.png,images/ice-brwon_lifestyle.png,1,34,Ice,231;223;215
+oreal-crema,oreal-crema,Oreal Crema,glossy,Glossy Random Vol 1,2,4,600x1200,images/oreal-crema_texture.png,images/oreal-crema_thumb.png,images/oreal-crema_lifestyle.png,3,35,Crema,239;232;223
+coyate-light,coyate-light,Coyate Light,glossy,Glossy Random Vol 1,2,4,600x1200,images/coyate-light_texture.png,images/coyate-light_thumb.png,images/coyate-light_lifestyle.png,1,37,Coyate,240;235;228
+amfra-crema,amfra-crema,Amfra Crema,glossy,Glossy Random Vol 1,2,4,600x1200,images/amfra-crema_texture.png,images/amfra-crema_thumb.png,images/amfra-crema_lifestyle.png,5,38,Crema,244;234;220
+selva-onyx-gold,selva-onyx-gold,Selva Onyx Gold,glossy,Glossy Random Vol 1,2,4,600x1200,images/selva-onyx-gold_texture.png,images/selva-onyx-gold_thumb.png,images/selva-onyx-gold_lifestyle.png,5,39,Onyx,250;242;231
+selva-onyx-white,selva-onyx-white,Selva Onyx White,glossy,Glossy Random Vol 1,2,4,600x1200,images/selva-onyx-white_texture.png,images/selva-onyx-white_thumb.png,images/selva-onyx-white_lifestyle.png,5,40,Onyx,247;247;248
+antisky-onyx,antisky-onyx,Antisky Onyx,glossy,Glossy Random Vol 1,2,4,600x1200,images/antisky-onyx_texture.png,images/antisky-onyx_thumb.png,images/antisky-onyx_lifestyle.png,5,41,Onyx,249;245;237
+italian-onyx,italian-onyx,Italian Onyx,glossy,Glossy Random Vol 1,2,4,600x1200,images/italian-onyx_texture.png,images/italian-onyx_thumb.png,images/italian-onyx_lifestyle.png,5,43,Onyx,244;240;230
+golden-onyx,golden-onyx,Golden Onyx,glossy,Glossy Random Vol 1,2,4,600x1200,images/golden-onyx_texture.png,images/golden-onyx_thumb.png,images/golden-onyx_lifestyle.png,5,44,Onyx,248;246;235
+white-onyx,white-onyx,White Onyx,glossy,Glossy Random Vol 1,2,4,600x1200,images/white-onyx_texture.png,images/white-onyx_thumb.png,images/white-onyx_lifestyle.png,5,45,Onyx,247;247;247
+travertino-glitter,travertino-glitter,Travertino Glitter,glossy,Glossy Random Vol 1,2,4,600x1200,images/travertino-glitter_texture.png,images/travertino-glitter_thumb.png,images/travertino-glitter_lifestyle.png,3,46,Travertino,246;239;222
+travertine,travertine,Travertine,glossy,Glossy Random Vol 1,2,4,600x1200,images/travertine_texture.png,images/travertine_thumb.png,images/travertine_lifestyle.png,5,48,Travertine,235;225;207
+travertyna,travertyna,Travertyna,glossy,Glossy Random Vol 1,2,4,600x1200,images/travertyna_texture.png,images/travertyna_thumb.png,images/travertyna_lifestyle.png,2,49,Travertyna,228;200;161
+daina-river,daina-river,Daina River,glossy,Glossy Random Vol 1,2,4,600x1200,images/daina-river_texture.png,images/daina-river_thumb.png,images/daina-river_lifestyle.png,1,50,Daina,232;217;198
+daina-crema,daina-crema,Daina Crema,glossy,Glossy Random Vol 1,2,4,600x1200,images/daina-crema_texture.png,images/daina-crema_thumb.png,images/daina-crema_lifestyle.png,1,51,Crema,245;232;215
+breccia-real,breccia-real,Breccia Real,glossy,Glossy Random Vol 1,2,4,600x1200,images/breccia-real_texture.png,images/breccia-real_thumb.png,images/breccia-real_lifestyle.png,5,52,Breccia,228;216;195
+breccia-beige,breccia-beige,Breccia Beige,glossy,Glossy Random Vol 1,2,4,600x1200,images/breccia-beige_texture.png,images/breccia-beige_thumb.png,images/breccia-beige_lifestyle.png,3,53,Breccia,249;236;217
+maxima-crema,maxima-crema,Maxima Crema,glossy,Glossy Random Vol 1,2,4,600x1200,images/maxima-crema_texture.png,images/maxima-crema_thumb.png,images/maxima-crema_lifestyle.png,5,54,Crema,246;243;233
+marmo-crema,marmo-crema,Marmo Crema,glossy,Glossy Random Vol 1,2,4,600x1200,images/marmo-crema_texture.png,images/marmo-crema_thumb.png,images/marmo-crema_lifestyle.png,3,55,Marmo,237;230;216
+asthetic-brown,asthetic-brown,Asthetic Brown,glossy,Glossy Random Vol 1,2,4,600x1200,images/asthetic-brown_texture.png,images/asthetic-brown_thumb.png,images/asthetic-brown_lifestyle.png,3,56,Asthetic,223;210;191
+v-cornica,v-cornica,V Cornica,glossy,Glossy Random Vol 1,2,4,600x1200,images/v-cornica_texture.png,images/v-cornica_thumb.png,images/v-cornica_lifestyle.png,3,57,Cornica,245;237;224
+elenta-verde,elenta-verde,Elenta Verde,glossy,Glossy Random Vol 1,2,4,600x1200,images/elenta-verde_texture.png,images/elenta-verde_thumb.png,images/elenta-verde_lifestyle.png,5,59,Verde,171;166;156
+rivet-crema,rivet-crema,Rivet Crema,glossy,Glossy Random Vol 1,2,4,600x1200,images/rivet-crema_texture.png,images/rivet-crema_thumb.png,images/rivet-crema_lifestyle.png,5,60,Crema,241;228;211
+sarran-colin-grey,sarran-colin-grey,Sarran Colin Grey,glossy,Glossy Random Vol 1,2,4,600x1200,images/sarran-colin-grey_texture.png,images/sarran-colin-grey_thumb.png,images/sarran-colin-grey_lifestyle.png,4,61,Sarran,204;202;199
