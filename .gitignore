@@ -41,3 +41,6 @@ Thumbs.db
 
 # Test coverage
 coverage/
+
+# Graphify extraction cache (regenerable, machine-local hash cache)
+graphify-out/cache/

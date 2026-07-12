@@ -1,8 +1,1001 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {},
-  "nodes": [],
-  "links": [],
-  "hyperedges": []
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "hyperedge_tile_application_pipeline",
+        "label": "Tile Application Pipeline (splat limitation -> panel -> catalogue -> material)",
+        "nodes": [
+          "shared_gaussian_splats",
+          "shared_panel_tiling_strategy",
+          "shared_tile_catalogue_schema",
+          "prd_finish_material_preset"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "PRD.md"
+      },
+      {
+        "id": "hyperedge_world_model_pitch_narrative",
+        "label": "World-Model Hackathon Pitch Narrative",
+        "nodes": [
+          "shared_flashworld",
+          "prd_world_model_theme",
+          "prd_demo_pitch_framing",
+          "prd_sundai_hackathon"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "PRD.md"
+      },
+      {
+        "id": "hyperedge_build_plan_scope",
+        "label": "H0-H4 Build Plan Implements Core Stack",
+        "nodes": [
+          "shared_build_phases",
+          "shared_react_r3f_stack",
+          "shared_panel_tiling_strategy",
+          "shared_tile_catalogue_schema"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "CLAUDE.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "extract_catalog.py",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "extract_catalog.py",
+      "id": "scripts_extract_catalog_py"
+    },
+    {
+      "label": "crop_box()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L60",
+      "community": 0,
+      "norm_label": "crop_box()",
+      "id": "scripts_extract_catalog_crop_box"
+    },
+    {
+      "label": "ocr_line()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L65",
+      "community": 0,
+      "norm_label": "ocr_line()",
+      "id": "scripts_extract_catalog_ocr_line"
+    },
+    {
+      "label": "ocr_name()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L70",
+      "community": 5,
+      "norm_label": "ocr_name()",
+      "id": "scripts_extract_catalog_ocr_name"
+    },
+    {
+      "label": "slugify()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L80",
+      "community": 0,
+      "norm_label": "slugify()",
+      "id": "scripts_extract_catalog_slugify"
+    },
+    {
+      "label": "derive_family()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L86",
+      "community": 0,
+      "norm_label": "derive_family()",
+      "id": "scripts_extract_catalog_derive_family"
+    },
+    {
+      "label": "dominant_color()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L93",
+      "community": 0,
+      "norm_label": "dominant_color()",
+      "id": "scripts_extract_catalog_dominant_color"
+    },
+    {
+      "label": "is_product_page()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L103",
+      "community": 0,
+      "norm_label": "is_product_page()",
+      "id": "scripts_extract_catalog_is_product_page"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L108",
+      "community": 0,
+      "norm_label": "main()",
+      "id": "scripts_extract_catalog_main"
+    },
+    {
+      "label": "build_contact_sheet()",
+      "file_type": "code",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L226",
+      "community": 0,
+      "norm_label": "build_contact_sheet()",
+      "id": "scripts_extract_catalog_build_contact_sheet"
+    },
+    {
+      "label": "Extract a structured tile catalog from GLOSSY_RANDOM_VOL_1.pdf (\"2ft by 4ft Cata",
+      "file_type": "rationale",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "extract a structured tile catalog from glossy_random_vol_1.pdf (\"2ft by 4ft cata",
+      "id": "scripts_extract_catalog_rationale_1"
+    },
+    {
+      "label": "Name crop sometimes bleeds into the tile image below it, which breaks     tesser",
+      "file_type": "rationale",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L71",
+      "community": 5,
+      "norm_label": "name crop sometimes bleeds into the tile image below it, which breaks     tesser",
+      "id": "scripts_extract_catalog_rationale_71"
+    },
+    {
+      "label": "catalog.json",
+      "file_type": "code",
+      "source_file": "catalog.json",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "catalog.json",
+      "id": "catalog_json"
+    },
+    {
+      "label": "Tile-Visualizer Architecture & Build Guide (CLAUDE.md)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 1-6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "tile-visualizer architecture & build guide (claude.md)",
+      "id": "claude_architecture_guide"
+    },
+    {
+      "label": "PRD - FlashWorld Tile Visualizer",
+      "file_type": "document",
+      "source_file": "PRD.md",
+      "source_location": "lines 1-7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "prd - flashworld tile visualizer",
+      "id": "prd_document"
+    },
+    {
+      "label": "FlashWorld (generative world model)",
+      "file_type": "paper",
+      "source_file": "PRD.md",
+      "source_location": "lines 50-65",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Xiamen University x Tencent",
+      "contributor": null,
+      "community": 1,
+      "norm_label": "flashworld (generative world model)",
+      "id": "shared_flashworld"
+    },
+    {
+      "label": "HunyuanWorld-1.0-lite (rejected alternative)",
+      "file_type": "paper",
+      "source_file": "PRD.md",
+      "source_location": "lines 59-60",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "hunyuanworld-1.0-lite (rejected alternative)",
+      "id": "shared_hunyuanworld"
+    },
+    {
+      "label": "FlashWorld GPU Offload Flags",
+      "file_type": "rationale",
+      "source_file": "PRD.md",
+      "source_location": "lines 55-58",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "flashworld gpu offload flags",
+      "id": "prd_offload_flags"
+    },
+    {
+      "label": "Kaggle (offline GPU compute platform)",
+      "file_type": "document",
+      "source_file": "PRD.md",
+      "source_location": "lines 133-134",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "kaggle (offline gpu compute platform)",
+      "id": "prd_kaggle"
+    },
+    {
+      "label": "Gaussian Splat Scene (.ply/.spz)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 14-18, 35-38",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "gaussian splat scene (.ply/.spz)",
+      "id": "shared_gaussian_splats"
+    },
+    {
+      "label": "Inserted Flat-Quad Panel Tiling Strategy",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 35-41",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "inserted flat-quad panel tiling strategy",
+      "id": "shared_panel_tiling_strategy"
+    },
+    {
+      "label": "Tile Catalogue Data Model",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 43-66",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "tile catalogue data model",
+      "id": "shared_tile_catalogue_schema"
+    },
+    {
+      "label": "React + react-three-fiber Web App Stack",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 20-33",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "react + react-three-fiber web app stack",
+      "id": "shared_react_r3f_stack"
+    },
+    {
+      "label": "H0-H4 Build Phases",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 67-77",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "h0-h4 build phases",
+      "id": "shared_build_phases"
+    },
+    {
+      "label": "Depth Anything V2 Fallback Pipeline",
+      "file_type": "rationale",
+      "source_file": "PRD.md",
+      "source_location": "lines 165-167",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "depth anything v2 fallback pipeline",
+      "id": "prd_depth_anything_fallback"
+    },
+    {
+      "label": "Demo/Pitch Framing (Mini Digital Twin)",
+      "file_type": "rationale",
+      "source_file": "PRD.md",
+      "source_location": "lines 178-184",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "demo/pitch framing (mini digital twin)",
+      "id": "prd_demo_pitch_framing"
+    },
+    {
+      "label": "World Model Theme Fit Rationale",
+      "file_type": "rationale",
+      "source_file": "PRD.md",
+      "source_location": "lines 17-28",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "world model theme fit rationale",
+      "id": "prd_world_model_theme"
+    },
+    {
+      "label": "Sundai \"World Models\" Hackathon",
+      "file_type": "document",
+      "source_file": "PRD.md",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "sundai \"world models\" hackathon",
+      "id": "prd_sundai_hackathon"
+    },
+    {
+      "label": "Finish-Based PBR Material Preset (Glossy/Matte)",
+      "file_type": "rationale",
+      "source_file": "PRD.md",
+      "source_location": "lines 81-84",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "finish-based pbr material preset (glossy/matte)",
+      "id": "prd_finish_material_preset"
+    },
+    {
+      "label": "Browser Gaussian-Splat Viewer (Three.js)",
+      "file_type": "code",
+      "source_file": "PRD.md",
+      "source_location": "lines 75-76",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "browser gaussian-splat viewer (three.js)",
+      "id": "prd_splat_viewer"
+    },
+    {
+      "label": "Planned Directory Structure",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 94-112",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "planned directory structure",
+      "id": "claude_directory_structure"
+    },
+    {
+      "label": "Development Commands (npm scripts)",
+      "file_type": "code",
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 79-88",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "development commands (npm scripts)",
+      "id": "claude_dev_commands"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_build_contact_sheet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_crop_box"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_derive_family"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_dominant_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_is_product_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_ocr_line"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_ocr_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_slugify"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_py",
+      "target": "scripts_extract_catalog_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_crop_box",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_ocr_line",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_ocr_name",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_ocr_name",
+      "target": "scripts_extract_catalog_rationale_71"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_slugify",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_derive_family",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_dominant_color",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_is_product_page",
+      "target": "scripts_extract_catalog_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/extract_catalog.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_extract_catalog_main",
+      "target": "scripts_extract_catalog_build_contact_sheet"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 79-88",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "claude_dev_commands"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 94-112",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "claude_directory_structure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "prd_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 10-13, 90-92",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "prd_kaggle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 6",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "prd_sundai_hackathon"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 67-77",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "shared_build_phases"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 6, 10-12",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "shared_flashworld"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 20-26",
+      "weight": 1.0,
+      "source": "claude_architecture_guide",
+      "target": "shared_react_r3f_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 178-184",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "prd_demo_pitch_framing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 165-167",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "prd_depth_anything_fallback"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 81-84",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "prd_finish_material_preset"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 55-58",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "prd_offload_flags"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 75-76",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "prd_splat_viewer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "prd_sundai_hackathon"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 17-28",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "prd_world_model_theme"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 141-149",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "shared_build_phases"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 50-53",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "shared_flashworld"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 59-60",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "shared_hunyuanworld"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 135-136",
+      "weight": 1.0,
+      "source": "prd_document",
+      "target": "shared_react_r3f_stack"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 22-28",
+      "weight": 1.0,
+      "source": "shared_flashworld",
+      "target": "prd_world_model_theme"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 55-58",
+      "weight": 1.0,
+      "source": "shared_flashworld",
+      "target": "prd_offload_flags"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 61-65",
+      "weight": 1.0,
+      "source": "shared_flashworld",
+      "target": "shared_gaussian_splats"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 55-60",
+      "weight": 1.0,
+      "source": "shared_flashworld",
+      "target": "shared_hunyuanworld"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 55-58, 133-134",
+      "weight": 1.0,
+      "source": "prd_offload_flags",
+      "target": "prd_kaggle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 163-167",
+      "weight": 1.0,
+      "source": "shared_gaussian_splats",
+      "target": "prd_depth_anything_fallback"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 75-76",
+      "weight": 1.0,
+      "source": "shared_gaussian_splats",
+      "target": "prd_splat_viewer"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 63-79",
+      "weight": 1.0,
+      "source": "shared_gaussian_splats",
+      "target": "shared_panel_tiling_strategy"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "PRD.md",
+      "source_location": "lines 165-167",
+      "weight": 1.0,
+      "source": "shared_panel_tiling_strategy",
+      "target": "prd_depth_anything_fallback"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 67-77",
+      "weight": 1.0,
+      "source": "shared_panel_tiling_strategy",
+      "target": "shared_build_phases"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 39-40, 63-66",
+      "weight": 1.0,
+      "source": "shared_panel_tiling_strategy",
+      "target": "shared_tile_catalogue_schema"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 91-98",
+      "weight": 1.0,
+      "source": "shared_tile_catalogue_schema",
+      "target": "prd_finish_material_preset"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 26-29, 63-66",
+      "weight": 1.0,
+      "source": "shared_tile_catalogue_schema",
+      "target": "shared_react_r3f_stack"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md",
+      "source_location": "lines 79-88",
+      "weight": 1.0,
+      "source": "shared_react_r3f_stack",
+      "target": "claude_dev_commands"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PRD.md",
+      "source_location": "lines 26-28, 178-184",
+      "weight": 1.0,
+      "source": "prd_demo_pitch_framing",
+      "target": "prd_world_model_theme"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hyperedge_tile_application_pipeline",
+      "label": "Tile Application Pipeline (splat limitation -> panel -> catalogue -> material)",
+      "nodes": [
+        "shared_gaussian_splats",
+        "shared_panel_tiling_strategy",
+        "shared_tile_catalogue_schema",
+        "prd_finish_material_preset"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PRD.md"
+    },
+    {
+      "id": "hyperedge_world_model_pitch_narrative",
+      "label": "World-Model Hackathon Pitch Narrative",
+      "nodes": [
+        "shared_flashworld",
+        "prd_world_model_theme",
+        "prd_demo_pitch_framing",
+        "prd_sundai_hackathon"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PRD.md"
+    },
+    {
+      "id": "hyperedge_build_plan_scope",
+      "label": "H0-H4 Build Plan Implements Core Stack",
+      "nodes": [
+        "shared_build_phases",
+        "shared_react_r3f_stack",
+        "shared_panel_tiling_strategy",
+        "shared_tile_catalogue_schema"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "CLAUDE.md"
+    }
+  ],
+  "built_at_commit": "8f8c0b009a429d34df9b697949b5f9a5a7a7c786"
 }
