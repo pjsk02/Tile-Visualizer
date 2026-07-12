@@ -1,7 +1,13 @@
 Owner: **Dev B**
 
-Tile catalogue: thumbnail grid, finish filter, code/name display. Reads `designs` and
-`finishFilter` from `useVisualizerStore`; calls `selectDesign`/`setFinishFilter`. Never
-touches `src/scene` or `src/panels` directly.
+Tile catalogue UI. Reads `designs` / `finishFilter` / `selectedDesign` / `selectedSurfaceId`
+from `useVisualizerStore`; writes via `selectDesign` / `setFinishFilter` only.
 
-`DesignCount.tsx` is a temporary wiring-proof stub — replace with the real grid.
+| File | Role |
+|------|------|
+| `CatalogPanel.tsx` | Compose filter + hint + grid |
+| `DesignGrid.tsx` / `DesignCard.tsx` | Lazy thumbnail grid (id + name) |
+| `FinishFilter.tsx` | all / glossy / matte / random |
+| `filterDesigns.ts` | Pure finish filter helper |
+
+Never imports from `src/scene` or `src/panels`.
